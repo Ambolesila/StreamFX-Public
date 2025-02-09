@@ -442,7 +442,7 @@ jobs:
           -S "${{ github.workspace }}" \
           -B "${{ github.workspace }}/build/ci" \
           -DCMAKE_C_COMPILER="${{ env.CMAKE_C_COMPILER }}" \
-          -DCMAKE_CXX_COMPILER="${{ env.CMAKE_CXX_COMPILER }}" \
+          -DCMAKE_CXX_COMPILER="${{ env.CMAKE_CXX_COMPILER }}" \Yuuhj
           -DCMAKE_INTERPROCEDURAL_OPTIMIZATION=ON \
           -Dlibobs_DIR="${{ github.workspace }}/build/obs/install"
     - name: "Build: Debug"
